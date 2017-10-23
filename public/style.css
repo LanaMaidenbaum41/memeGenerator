@@ -1,5 +1,11 @@
 body {
+    background-image: url('https://www.walldevil.com/wallpapers/a38/sun-japan-flag-retro.jpg');
     background-color: rgb(221, 221, 221);
+    background-size: cover;
+}
+
+.navbar-brand {
+    font-family: 'Kalam';
 }
 
 section {
@@ -86,7 +92,7 @@ section {
     color: #a7a0a2;
     font-size: 16px;
     position: relative;
-    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+    box-shadow: 5px 5px 10px rgb(46, 35, 35);
     transition: width 1s;
 }
 
@@ -110,12 +116,12 @@ img {
     position: relative;
     height: 100px;
     width: 300px;
-    background: white;
+    background: #F1E5C4;
     border-color: grey;
     border-radius: 5px;
     padding: 30px;
     margin: 10px;
-    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+    box-shadow: 5px 5px 10px rgb(46, 35, 35);
 }
 
 .right {
@@ -126,6 +132,7 @@ img {
 
 .textInput {
     border: none;
+    background: #F1E5C4;
 }
 
 .color-choice {
@@ -145,7 +152,7 @@ i {
 }
 
 .btn {
-    box-shadow: 2px 3px 10px rgb(150, 150, 150);
+    box-shadow: 5px 5px 10px rgb(46, 35, 35);
     margin: 0px;
     padding: 5px;
     font-size: 19px;
@@ -166,6 +173,7 @@ i {
     font-size: 25px;
     color: #FFF;
     text-decoration: none !important;
+    box-shadow: 5px 5px 10px rgb(46, 35, 35);
 }
 
 .blue {
@@ -201,3 +209,8 @@ i {
 .fa-floppy-o {
     color: white;
 }
+
+::-webkit-input-placeholder {
+    color: #645436;
+    font-family: 'Kalam';
+  }
