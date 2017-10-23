@@ -1,3 +1,203 @@
-section{
-    margin-top:50px;
+body {
+    background-color: rgb(221, 221, 221);
+}
+
+section {
+    margin-top: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 22px;
+    color: #333333;
+}
+
+
+/* .container {
+    border-radius:10px;
+    padding: 10px;
+    border: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+} */
+
+
+/* .meme-box {
+    display: flex;
+    border: 1px dotted white;
+    background-color: none;
+    border-color: black;
+    height: 500px;
+    max-height: 500px;
+    width: 65%;
+    min-width: 300px;
+    margin: 1%;
+    padding: 10px;
+    border-radius:10px;
+} */
+
+.control-box {
+    display: flex;
+    background-color: none;
+    height: 500px;
+    max-height: 500px;
+    width: 25%;
+    min-width: 300px;
+    margin: 1%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* .meme-image {
+    background: url('https://timedotcom.files.wordpress.com/2017/07/game-of-thrones-queens-justice-jon-snow-daenerys-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+} */
+
+.polaroids {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;   
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 330px;
+    height: 360px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: 20px 30px 20px 0;
+    text-align: center;
+    font-family: 'Kalam';
+    font-weight: bold;
+    color: #a7a0a2;
+    font-size: 16px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+    transition: width 1s;
+}
+
+img {
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#pol {
+    transform: rotateZ(5deg);
+    transition: transform 1s;
+}
+
+#pol:hover {
+    transform: rotateZ(-5deg);
+}
+
+.bubble {
+    box-sizing: border-box;
+    position: relative;
+    height: 100px;
+    width: 300px;
+    background: white;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.textInput {
+    border: none;
+}
+
+.color-choice {
+    font-family: 'Kalam';
+    display: flex;
+    justify-content: space-around;
+}
+
+.save-post {
+    font-family: 'Kalam';
+    display: flex;
+    justify-content: space-around;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.btn {
+    box-shadow: 2px 3px 10px rgb(150, 150, 150);
+    margin: 0px;
+    padding: 5px;
+    font-size: 19px;
+}
+
+.animate {
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button {
+    display:flex;
+    justify-content: center;
+    padding: 10px 40px;
+    margin: 10px;
+    border-radius: 8px;
+    font-family: 'Kalam';
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none !important;
+}
+
+.blue {
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+}
+
+.action-button:active {
+    transform: translate(0px, 5px);
+    -webkit-transform: translate(0px, 5px);
+    border-bottom: 1px solid;
+}
+
+.sep-col {
+    background-color: #85633C;
+    border: dotted;
+    border-width: 2px;
+}
+
+.pol-col {
+    background-color: #C2C053;
+    border: dotted;
+    border-width: 2px;
+}
+
+.black-col {
+    background-color: #AFA6A6;
+    border: dotted;
+    border-width: 2px;
+}
+
+.fa-floppy-o {
+    color: white;
 }
