@@ -1,4 +1,30 @@
 <div ng-controller="homeCtrl">
     {{text}}
+    <div class="container">
+            <div class="polaroids">
+                <div class="image" id="pol">
+                  <img src="{{memeImage}}" onerror="this.src='http://www.drodd.com/images11/meme-faces10.png';">
+                  <p>{{memeText}}</p>
+                </div>
+                <div class="right">
+                        <div class="color-choice">
+                                <a class="btn btn-default btn-circle sep-col">sepia</a>
+                                <a class="btn btn-default btn-circle black-col">black-and-white</a>
+                                <a class="btn btn-default btn-circle pol-col">polaroid</a>
+                            </div>
+                <div class="bubble bubble-top">
+                    <input placeholder="url" ng-model="memeImage" class="textInput" type="text">
+                </div>
+                    <div class="bubble bubble-bottom">
+                        <input placeholder="Text" ng-model="memeText" class="textInput" type="text">
+                    </div>
+                    <div class="save-post">
+                    <a href="#" class="action-button animate blue">Post</a>
+                    <a href="#" class="action-button animate blue"><i class="fa fa-floppy-o" aria-hidden="true"></i>  Save</a>
+                </div>
+            </div>
+                  
+      </div>
+
 
 </div>
