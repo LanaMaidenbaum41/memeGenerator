@@ -1,33 +1,32 @@
 <div ng-controller="allCtrl">
     {{text}}
 
-<div ng-repeat="meme in allMemes">
-
-</div>
-
     <div class="polaroids">
+        <div ng-repeat="pic in polaroids">
             <div class="image" id="pol">
-              <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/1.jpg">
-              <p>Serenity beach</p>
+                <img ng-src={{pic.dataUrl}} onerror="this.src='https://tympanus.net/Development/ScatteredPolaroidsGallery/img/1.jpg';">
+                <!-- <p>{{pic}}</p> -->
             </div>
-            <div class="image" id="pol">
-                  <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/2.jpg">
-                  <p>Happy days</p>
-            </div>
-            <div class="image" id="pol">
-                  <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/3.jpg">
-                  <p>Beautywood</p>
-            </div>
-            <div class="image" id="pol">
-                  <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/4.jpg">
-              <p>Heaven of time</p>
-            </div>
-              <div class="image" id="pol">
-                  <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/5.jpg">
-                <p>Speed racer</p>
-            </div>
-              <div class="image" id="pol">
-                  <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/6.jpg">
-                <p>Forever this</p>
-            </div></div>
+        </div>
+        <div class="image" id="pol">
+            <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/2.jpg">
+            <p>Happy days</p>
+        </div>
+        <div class="image" id="pol">
+            <img ng-src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/3.jpg">
+            <p>Beautywood</p>
+        </div>
+        <div class="image" id="pol">
+            <img ng-src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/4.jpg">
+            <p>Heaven of time</p>
+        </div>
+        <div class="image" id="pol">
+            <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/5.jpg">
+            <p>Speed racer</p>
+        </div>
+        <div class="image" id="pol">
+            <img src="https://tympanus.net/Development/ScatteredPolaroidsGallery/img/6.jpg">
+            <p>Forever this</p>
+        </div>
+    </div>
 </div>
