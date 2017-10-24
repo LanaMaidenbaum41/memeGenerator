@@ -49,6 +49,6 @@ app.use(function (req, res, next) {
     next(err);
 });
 
-app.listen(8001, function () {
-    console.log('Andrea and Lana are on 8001 :)')
+app.listen(8002, function () {
+    console.log('Andrea and Lana are on 8002 :)')
 })
