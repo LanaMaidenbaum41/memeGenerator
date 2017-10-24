@@ -1,13 +1,14 @@
 <div ng-controller="homeCtrl">
-    <button ng-click="loadToCanvas()">{{text}}</button>
+    <button ng-click="loadToCanvas()">add pic</button>
     <button ng-click="addText()">add text</button>
+    <button ng-click="resetCanvas()">reset canvas</button>
     <div class="container">
         <div class="polaroids">
             <div class="image" id="pol">
-                <canvas id="memeCanvas" width="300" height="350" style="border:1px solid #d3d3d3;">
+                <canvas id="memeCanvas" width="300" height="345" style="border:1px solid #d3d3d3;">
                     Your browser does not support the HTML5 canvas tag.
                 </canvas>
-                <img style="display:none;" id="pic" ng-src="{{memeImage}}" onerror="this.src='http://www.drodd.com/images11/meme-faces10.png';">
+                <img style="display:none;" id="pic" ng-src="{{memeImage}}" onerror="this.src='error.png';">
 
                 <img style="display:none;" src="" id="preview">
             </div>
@@ -24,9 +25,12 @@
                 <div class="bubble bubble-bottom">
                     <input placeholder="Text" ng-model="memeText" class="textInput" type="text">
                 </div>
+                <div class="bubble bubble-bottom">
+                        <input placeholder="Meme name" ng-model="memeName" class="textInput" type="text">
+                    </div>
                 <div class="save-post">
-                    <a href="#" class="action-button animate blue">Post</a>
-                    <a href="#" class="action-button animate blue">
+                    <a href="#"  class="action-button animate blue">Post</a>
+                    <a ng-click="convertToImage()" id="button" class="action-button animate blue">
                         <i class="fa fa-floppy-o" aria-hidden="true"></i> Save</a>
                 </div>
             </div>
