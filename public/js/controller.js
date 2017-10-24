@@ -20,7 +20,7 @@ app.controller('homeCtrl', ['$scope', 'mainService', function ($scope, mainServi
     $scope.addText = function () {
         mainService.context.font = "30px Kalam";
         mainService.context.fillStyle = "#fff"
-        mainService.context.fillRect(0,280,300,280);
+        mainService.context.fillRect(0,280,330,220);
         mainService.context.textAlign = "center";
         mainService.context.fillStyle = "#000"
         mainService.context.fillText($scope.memeText, mainService.canvas.width / 2, 320);

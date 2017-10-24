@@ -1,10 +1,12 @@
 <div ng-controller="homeCtrl">
 
-    <button ng-click="resetCanvas()">reset canvas</button>
+    
     <div class="container">
         <div class="polaroids">
+ 
             <div class="image" id="pol">
-                <canvas id="memeCanvas" width="300" height="350" style="border:none #d3d3d3;">
+
+                <canvas id="memeCanvas" width="330" height="360" style="border:none #d3d3d3;">
 
                     Your browser does not support the HTML5 canvas tag.
                 </canvas>
@@ -19,19 +21,21 @@
                     <a class="btn btn-default btn-circle black-col">black-and-white</a>
                     <a class="btn btn-default btn-circle pol-col">polaroid</a>
                 </div>
+                <button class="action-button animate blue" ng-click="resetCanvas()">reset canvas</button>
                 <div class="bubble bubble-top">
                     <input placeholder="url" ng-model="memeImage" class="textInput" type="text">
                 </div>
-                <button class="action-button animate blue" ng-click="loadToCanvas()">{{text}}</button>
+                <button class="action-button animate blue" ng-click="loadToCanvas()">add pic</button>
+                
                 <div class="bubble bubble-bottom">
                     <input placeholder="Text" ng-model="memeText" class="textInput" type="text">
                 </div>
-
-                <div class="bubble bubble-bottom">
-                        <input placeholder="Meme name" ng-model="memeName" class="textInput" type="text">
+                <button class="action-button animate blue" ng-click="addText()">add text</button>
+                <div class="bubble bubble-bottom filename">
+                        <input placeholder="File name" ng-model="memeName" class="textInput" type="text">
                     </div>
 
-                <button class="action-button animate blue" ng-click="addText()">add text</button>
+                
 
                 <div class="save-post">
                     <a href="#"  class="action-button animate blue">Post</a>
