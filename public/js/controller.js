@@ -1,10 +1,10 @@
-app.controller('homeCtrl', ['$scope', 'mainService', function ($scope, mainService) {
+app.controller('homeCtrl', ['$scope', '$rootScope','mainService', function ($scope, $rootScope ,mainService) {
     mainService.resetCanvas();
 
     $scope.resetCanvas = function () {
         mainService.resetCanvas();
     }
-    $scope.polaroids=[]
+    $rootScope.polaroids=[]
     $scope.convertToImage = function(){
         var dataURL = mainService.convertToImage($scope.memeName);
         var newPolaroid={
@@ -28,13 +28,14 @@ app.controller('homeCtrl', ['$scope', 'mainService', function ($scope, mainServi
 
 }]);
 
-app.controller('allCtrl', ['$scope', 'allService', function ($scope, allService) {
+app.controller('allCtrl', ['$scope','$rootScope', 'allService', function ($scope, $rootScope ,allService) {
     $scope.text = 'ALL controller space';
 
     $scope.allMemes = allService.allMemes;
+    $rootScope.polaroids
 }]);
 
 
-app.controller('memeCtrl', ['$scope', 'mainService', function ($scope, mainService) {
+app.controller('memeCtrl', ['$scope','$rootScope', 'mainService', function ($scope,$rootScope , mainService) {
     $scope.text = 'MEME controller space';
 }]);
